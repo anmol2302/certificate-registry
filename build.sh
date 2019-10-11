@@ -6,7 +6,7 @@ echo "Docker build script"
 set -eo pipefail
 
 build_tag=$1
-name=certification_service
+name=cert_registry_service
 node=$2
 org=$3
 
