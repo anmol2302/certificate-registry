@@ -35,7 +35,6 @@ node('build-slave') {
                 print "Environment will be : ${env.NODE_ENV}"
                 sh 'git log -1'
 	
-		sh "cd $currentDir"
 		// Build the dependencies for sunbird certification-service
                 sh 'mvn clean install'
             }
