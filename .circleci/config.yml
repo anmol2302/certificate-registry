@@ -9,7 +9,7 @@ jobs:
       - restore_cache:
           key: lms-dependency-cache-{{ checksum "pom.xml" }}      
       - run: 
-          command: mvn clean install
+          command: mvn clean install -U
       - save_cache:
           key: lms-dependency-cache-{{ checksum "pom.xml" }}
           paths: ~/.m2
